@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Resume Autofiller</title>
+     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+    <!--
+      - JavaScript and HTML must be in separate files
+     -->
+    
+  </head>
+  <body style="height:200px; width:300px;">
+        <h1>Resume Autofiller</h1>
+        <div id="main" style="display:block">
+          <form>
+              <input type="button" name="choiceSub" id="userButton" value="Update Personal Info"/>
+              <input type="button" name="choiceSub" id="eduButton" value="Add Education"/>
+              <input type="button" name="choiceSub" id="jobButton" value="Add Work Experience"/>
+              <input type="button" name="choiceSub" id="overviewButton" value="Overview"/>
+              <input type="button" name="choiceSub" id="settingsButton" value="Settings"/>
+          </form>
+        
+        </div>
+        <h2 id="choice"></h2>
+        <div id="info_form" style="display:none">
+          <form>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname"><br>
+              <label for="email">Email:</label><br>
+              <input type="text" id="email" name="email"><br>
+              <input type="button" name="infoSub" id="infoSub" value="Save"/>
+              <input type="button" name="cancel" id="cancel" value="Cancel"/>
+          </form>
+        </div>
+        <div id="add_edu_form" style="display:none">
+          <form method="post">
+              <label for="school">School Name:</label><br>
+              <input type="text" id="school" name="school"><br>
+              <label for="major">Major:</label><br>
+              <input type="text" id="major" name="major"><br>
+              <label for="degree">Degree:</label><br>
+              <input type="text" id="degree" name="degree"><br>
+              <label for="grad">Graduation Date:</label><br>
+              <input type="date" id="grad" name="grad"><br>
+              <input type="button" name="eduSub" id="eduSub" value="Add Education"/>
+              <input type="button" name="cancel" id="eduCancel" value="Cancel"/>
+          </form>
+        </div>
+        <div id="add_exp_form" style="display:none">
+            <form method="post">
+                <label for="company">Company Name:</label><br>
+                <input type="text" id="company" name="company"><br>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="desc">Description:</label><br>
+                <textarea id="desc" name="desc"></textarea><br>
+                <label for="start">Start Date:</label><br>
+                <input type="date" id="start" name="start"><br>
+                <label for="end">End Date:</label><br>
+                <input type="date" id="end" name="end"><br>
+                <input type="button" name="expSub" id="expSub" value="Add Experience"/>
+                <input type="button" name="cancel" id="expCancel" value="Cancel"/>
+            </form>
+        </div>
+        <div id="overview" style="display:none">
+            <!--<b>Personal Information</b>
+            <p>Matthew Goldsborough</p>
+            <p>matthew.goldsborough@mymail.champlain.edu</p>
+            <input type="submit" value="Edit"/>
+            <b>Education</b>
+            <p>Champlain College</p>
+            <p>CSI</p>
+            <p>Bachelors</p>
+            <p>May 2021</p>
+            <input type="submit" value="Remove"/>-->
+        </div>
+  </body>
+  <script src="popup.js"></script>
+  
+</html>
